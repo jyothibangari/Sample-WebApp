@@ -30,7 +30,9 @@ jobs:
 
     - name: Restore NuGet packages
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: .\nuget.exe restore ${{env.SOLUTION_FILE_PATH}}
+      run: |
+          pwd
+          .\nuget.exe restore ${{env.SOLUTION_FILE_PATH}}
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
