@@ -30,7 +30,7 @@ jobs:
 
     - name: Restore NuGet packages
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: C:\actions-runner\_work\Sample-WebApp\Sample-WebApp\nuget.exe restore ${{env.SOLUTION_FILE_PATH}}
+      run: D:\ProgramData\Microsoft\VisualStudio\Packages\nuget.exe restore ${{env.SOLUTION_FILE_PATH}}
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
