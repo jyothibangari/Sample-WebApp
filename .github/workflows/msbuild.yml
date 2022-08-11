@@ -2,9 +2,9 @@ name: MSBuild
 
 on:
   push:
-    branches: [ "jyothibangari-patch-3" ]
+    branches: jyothibangari-patch-3 # [ main ]
   pull_request:
-    branches: [ "jyothibangari-patch-3" ]
+    branches: jyothibangari-patch-3 # [ main ]
 
 env:
   # Path to the solution file relative to the root of the project.
