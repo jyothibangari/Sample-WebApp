@@ -23,7 +23,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: selfhosted-latest
+    runs-on: selfhosted
     permissions:
       actions: read
       contents: read
