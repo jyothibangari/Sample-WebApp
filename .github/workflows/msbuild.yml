@@ -5,8 +5,8 @@ on:
    # branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-    types: 
-      - closed
+  schedule:
+     - cron: '*/5 * * * *' 
 env:
   # Path to the solution file relative to the root of the project.
   SOLUTION_FILE_PATH: .
